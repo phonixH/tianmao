@@ -2,6 +2,12 @@ body {
 	font-size: 12px;
 	font-family: Arial;
 }
+
+.clean:after {
+	content: '';
+	display: block;
+	clear: both;
+}
 a {
 	color: #999;
 }
@@ -29,6 +35,9 @@ nav.top a:hover {
 	left: 0;
 	top: 30px;
 	z-index: -1;
+}
+div.search {
+	margin-bottom: 51px;
 }
 div.searchDiv {
 	width: 400px;
@@ -119,4 +128,84 @@ div.descColumn span {
 div.descColumn a {
 	display: block;
 	padding-top: 3px;
+}
+/*public-footer*/
+div.copyright {
+	border-top: 1px solid #e7e7e7;
+	background-color: #000;
+}
+div.copyright span.slash {
+	color: #fff;
+}
+div.copyright a {
+	color: #fff;
+	padding: 0 5px;
+}
+div.copyright div.white-link {
+	margin-left: 10px;
+	padding: 10px 0;
+}
+div.copyright div.license {
+	margin-left: 10px;
+	padding-bottom: 30px;
+}
+div.copyright div.license span {
+	color: #a4a4a4;
+	padding: 0 20px;
+}
+div.copyright div.license div.copyRightYear {
+	margin: 10px 0;
+	color: #686868;
+}
+img.cateye {
+	margin-left: 20px;
+}
+
+/*首页轮播区域*/
+div.categoryWithCarousel {
+	width: 100%;
+}
+div.categoryWithCarousel div.headbar {
+	background-color: #c40000;
+}
+div.categoryWithCarousel div.head {
+	width: 200px;
+	bakcgound-color: #c60a0a;
+	height: 36px;
+	line-height: 36px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+	margin-left: 20px;
+	display: inline-block;
+}
+div.categoryWithCarousel div.right-menu {
+	display: inline-block;
+}
+div.categoryWithCarousel div.right-menu a {
+	font-size: 16px;
+	color: #fff;
+}
+div.categoryWithCarousel div.right-menu span {
+	margin: 0 20px;
+}
+div.categoryWithCarousel div.right-menu img {
+	height: 30px;
+}
+div.carousel-of-product {
+	height: 510px;
+	width: 1024px;
+	float: right;
+	margin-right: 20px;
+}
+img.carouselImage {
+	height: 510px !important;
+}
+div.carouselBackgroundDiv {
+	width: 100%;
+	height: 510px;
+	position: absolute;
+	top: 196px;
+	background-color: #e8e8e8;
+	z-index: -1;
 }
