@@ -1,0 +1,122 @@
+body {
+	font-size: 12px;
+	font-family: Arial;
+}
+a {
+	color: #999;
+}
+a:hover {
+	color: #c40000;
+}
+.redColor {
+	color: #c40000 !important; 
+}
+/*public-home-head*/
+nav.top {
+	background-color: #f2f2f2;
+	padding: 5px 0;
+	border-bottom: 1px solid #e7e7e7;
+}
+nav.top span,nav.top a {
+	color: #999;
+	margin: 0 10px;
+}
+nav.top a:hover {
+	color: #c40000;
+}
+#logo {
+	position: absolute;
+	left: 0;
+	top: 30px;
+	z-index: -1;
+}
+div.searchDiv {
+	width: 400px;
+	height: 40px;
+	float: right;
+	margin: 40px 20px 0 0;
+	background-color: #c40000;
+	padding: 1px;
+}
+div.searchDiv input {
+	width: 275px;
+	border: 1px solid transparent;
+	height: 36px;
+	margin: 1px;
+	outline: none;
+}
+div.searchDiv button {
+	width: 110px;
+	border: 1px solid transparent;
+	background: #c40000;
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+}
+div.searchBelow {
+	margin: 3px 0 0 -20px;
+}
+div.searchBelow span {
+	color: #999;
+}
+div.searchBelow a {
+	padding: 0 20px;
+	font-size: 14px;
+}
+
+/*public-simple-header*/
+img.simpleLogo {
+	position: absolute;
+	left: 10px;
+	top: 30px;
+}
+div.simpleSearchDiv {
+	width: 3	00px;
+	height: 40px;
+	background-color: #c40000;
+	padding: 1px;
+	margin: 10px 20px 40px;
+}
+div.simpleSearchDiv input {
+	width: 225px;
+	border: 1px solid transparent;
+	height: 34px;
+	margin: 2px;
+	outline: none;	
+}
+div.simpleSearchDiv button {
+	width: 60px;
+	border: 1px solid transparent;
+	background-color: #c40000;
+	color: #fff;
+	font-size: 14px;
+}
+
+/*public-footer*/
+div.footer {
+	margin: 0;
+	border-top: 1px solid #e7e7e7;
+}
+div.footer_ensure {
+	margin: 24px 0;
+	text-align: center;
+}
+div.footer_desc {
+	padding-top: 30px;
+	border-top: 1px solid #e7e7e7;
+	margin: 0 20px;
+}
+div.descColumn {
+	width: 20%;
+	float: left;
+	padding-left: 15px;
+}
+div.descColumn span {
+	color: #646464;
+	font-size: 16px;
+	font-weight: bold;
+}
+div.descColumn a {
+	display: block;
+	padding-top: 3px;
+}
