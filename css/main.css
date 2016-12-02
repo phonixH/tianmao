@@ -1,6 +1,7 @@
 body {
 	font-size: 12px;
 	font-family: Arial;
+	min-width: 1024px;
 }
 
 .clean:after {
@@ -170,7 +171,7 @@ div.categoryWithCarousel div.headbar {
 }
 div.categoryWithCarousel div.head {
 	width: 200px;
-	bakcgound-color: #c60a0a;
+	background-color: #c60a0a;
 	height: 36px;
 	line-height: 36px;
 	font-size: 16px;
@@ -194,9 +195,9 @@ div.categoryWithCarousel div.right-menu img {
 }
 div.carousel-of-product {
 	height: 510px;
-	width: 1024px;
+	min-width: 1024px;
 	float: right;
-	margin-right: 20px;
+	margin: 0 auto;
 }
 img.carouselImage {
 	height: 510px !important;
