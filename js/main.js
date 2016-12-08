@@ -1,10 +1,10 @@
 $(function(){
 	catear(); //首页猫耳朵
 	menuMove();//首页菜单移入移除
-	price();
-
-
-
+	price();//分类页价格区间
+	infoImgURL();// 产品介绍页面显示缩略图
+	buyNumber();//产品介绍页面控制购买数量
+	changeProductPage();// 切换商品详情和评价
 
 
 	// 首页猫耳朵
@@ -64,6 +64,59 @@ $(function(){
 			}
 		});
 	};
-
-
+	// 产品介绍页面显示缩略图
+	function infoImgURL(){
+		$('img.smallImg').mouseenter(function(){
+			var bigImageURL = $(this).attr('bigImageURL');
+			$('img.bigImg').attr('src',bigImageURL);
+		});
+		// 图片预加载
+		$('img.bigImg').load(function(){
+			$('img.smallImg').each(function(){
+				var bigImageURL = $(this).attr('bigImageURL');
+				img = new Image();
+				img.src = bigImageURL;
+				img.onload = function(){
+					console.log(bigImageURL);
+					$('div.img4load').append($(img));
+				};
+			});
+		});
+	};
+	//产品介绍页面控制购买数量
+	function buyNumber (){
+		var stock = 66;
+		$('.productNumberSetting').keyup(function(){
+			var num = $(this).val();
+			num = parseInt(num);
+			if(isNaN(num)) num = 1;
+			if(num <=0) num =1;
+			if(num > stock) num = stock;
+			$(this).val(num);
+		});
+		$('a.increaseNumber').click(function(){
+			var num = $('.productNumberSetting').val();
+			num ++;
+			if(num > stock) num = stock;
+			$('.productNumberSetting').val(num);
+		});
+		$('a.decreaseNumber').click(function(){
+			var num = $('.productNumberSetting').val();
+			num --;
+			if(num < 1) num = 1;
+			$('.productNumberSetting').val(num);
+		});
+	};
+	// 切换商品详情和评价
+	function changeProductPage(){
+		$('div.productReviewDiv').hide();
+		$('a.productDetailTopPartSelectedLink').click(function(){
+			$('div.productReviewDiv').hide();
+			$('div.productDetailDiv').show();
+		});
+		$('a.productDetailTopReviewLink').click(function(){
+			$('div.productReviewDiv').show();
+			$('div.productDetailDiv').hide();
+		});
+	};
 })

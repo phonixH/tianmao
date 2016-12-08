@@ -3,7 +3,9 @@ body {
 	font-family: Arial;
 	min-width: 1024px;
 }
-
+.hidden {
+	display: none;
+}
 .clean:after {
 	content: '';
 	display: block;
@@ -665,8 +667,7 @@ div.productDetailTopPart {
 }
 a.productDetailTopPartSelectedLink {
 	border-left: 1px solid #cfbfb1;
-	border-right: 1px solid #cfbfb1;
-	color: #b10000;
+	color: #000;
 	display: inline-block;
 	font-weight: bold;
 	line-height: 46px;
@@ -711,7 +712,7 @@ a.selected:after {
 a.productDetailTopReviewLink {
 	padding: 0 20px;
 	color: #333;
-
+	border-right: 1px dotted #D2D2D2;
 }
 span.productDetailTopReviewLinkNumber {
 	color: #3355b9;

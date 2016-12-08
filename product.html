@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Document</title>
-<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/bootstrap.js"></script>
 <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -12,17 +12,37 @@
 <script src="js/main.js"></script>
 </head>
 <body>
+<!-- ------------------------------头部------------------------------------- -->
+<nav class="top">
+	<a href="#">
+		<span class="glyphicon glyphicon-home redColor"></span>
+		天猫首页
+	</a>
+	<span>喵，欢迎来天猫</span>
+	<a href="#">请登录</a>
+	<a href="#">免费注册</a>
+	<span class="pull-right">
+		<a href="forebought">我的订单</a>
+		<a href="forecart">
+			<span class="glyphicon glyphicon-shopping-cart redColor"></span>
+				购物车
+				<strong>0</strong>
+				件
+		</a>
+	</span>
+</nav>
 <!-- 产品页面 -->
 <div class="imgAndInfo">
 	<div class="imgInimgAndInfoLeft">
 		<img src="img/productSingle/8619.jpg" class="bigImg" width="100px;">
 		<div class="smallImgDiv">
-			<img src="img/productSingle-small/8620.jpg" style="width: 56px;" class="smallImg">
-			<img src="img/productSingle-small/8619.jpg" style="width: 56px;" class="smallImg">
-			<img src="img/productSingle-small/8618.jpg" style="width: 56px;" class="smallImg">
-			<img src="img/productSingle-small/8617.jpg" style="width: 56px;" class="smallImg">
-			<img src="img/productSingle-small/8616.jpg" style="width: 56px;" class="smallImg">
+			<img src="img/productSingle-small/8620.jpg" style="width: 56px;" class="smallImg" bigImageURL="img/productSingle/8620.jpg">
+			<img src="img/productSingle-small/8619.jpg" style="width: 56px;" class="smallImg" bigImageURL="img/productSingle/8619.jpg">
+			<img src="img/productSingle-small/8618.jpg" style="width: 56px;" class="smallImg" bigImageURL="img/productSingle/8618.jpg">
+			<img src="img/productSingle-small/8617.jpg" style="width: 56px;" class="smallImg" bigImageURL="img/productSingle/8617.jpg">
+			<img src="img/productSingle-small/8616.jpg" style="width: 56px;" class="smallImg" bigImageURL="img/productSingle/8616.jpg">
 		</div>
+		<div class="img4load hidden"></div>
 	</div>
 	<div class="infoInimgAndInfo">
 		<div class="productTitle">
@@ -64,13 +84,13 @@
 					<input type="text" value="1" class="productNumberSetting">
 				</span>
 				<span class="arrow">
-					<a href="#" class="increaseNumber">
+					<a href="javasrcript:buyNumber;" class="increaseNumber">
 						<span class="updown">
 							<img src="img/site/increase.png" alt="">
 						</span>
 					</a>
 					<span class="uptownMiddle"></span>
-					<a href="#" class="decreaseNumber">
+					<a href="javascript:;" class="decreaseNumber">
 						<span class="updown">
 							<img src="img/site/decrease.png" alt="">
 						</span>
@@ -102,14 +122,12 @@
 	</div>
 	<div style="clear: both;"></div>
 </div>
-
 <div class="productPageDiv">
-	<div class="productDetailTopPart">
-		<a href="#" class="productDetailTopPartSelectedLink selected">商品详情</a>
-		<a href="#" class="productDetailTopReviewLink">累计评价<span class="productDetailTopReviewLinkNumber">19</span></a>
-	</div>
 	<div class="productDetailDiv" style="display: block;">
-		
+		<div class="productDetailTopPart">
+			<a href="javascript:;" class="productDetailTopPartSelectedLink selected">商品详情</a>
+			<a href="javasrcript:;" class="productDetailTopReviewLink">累计评价<span class="productDetailTopReviewLinkNumber">19</span></a>
+		</div>
 		<div class="productParamterPart">
 			<div class="productParamter">
 				产品参数：
@@ -130,6 +148,10 @@
 		</div>
 	</div>
 	<div class="productReviewDiv" style="display: block;">
+		<div class="productDetailTopPart">
+			<a href="javascript:;" class="productDetailTopPartSelectedLink">商品详情</a>
+			<a href="javasrcript:;" class="selected">累计评价<span class="productDetailTopReviewLinkNumber">19</span></a>
+		</div>
 		<div class="productReviewContentPart">
 			<div class="productReviewItem">
 				<div class="productReviewItemDesc">
