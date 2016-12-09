@@ -1,10 +1,13 @@
 $(function(){
+	
+
 	catear(); //首页猫耳朵
 	menuMove();//首页菜单移入移除
 	price();//分类页价格区间
 	infoImgURL();// 产品介绍页面显示缩略图
 	buyNumber();//产品介绍页面控制购买数量
 	changeProductPage();// 切换商品详情和评价
+	cartPage();
 
 
 	// 首页猫耳朵
