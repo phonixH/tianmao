@@ -7,7 +7,9 @@ $(function(){
 	infoImgURL();// 产品介绍页面显示缩略图
 	buyNumber();//产品介绍页面控制购买数量
 	changeProductPage();// 切换商品详情和评价
-	cartPageChange();
+	cartPageChange();// 购物车页面交互
+	myPage(); // 我的订单页面交互
+	jiesuan(); // 结算页面交互
 
 
 	// 首页猫耳朵
@@ -254,6 +256,30 @@ $(function(){
 			-- num;
 			if(num < 1) num = 1;
 			syncPrice(pid,num,price);
+		});
+	};
+
+	// 我的订单页面交互
+	function myPage(){
+		$('a[orderstatus]').click(function(){
+			var orderstatus = $(this).attr('orderstatus');
+			if(orderstatus == 'all'){
+				$('table[orderstatus]').show();
+			}else{
+				$('table[orderstatus]').hide();
+				$('table[orderstatus='+ orderstatus +']').show();
+			}
+			$('div.orderType div').removeClass('selectedOrderType');
+			$(this).parent('div').addClass('selectedOrderType');
+		});
+	};
+
+	// 结算页面交互
+	function jiesuan(){
+		$('img.leaveMessageImg').click(function(){
+			$(this).hide();
+			$('span.leaveMessageTextareaSpan').show();
+			$('div.orderItemSumDiv').css('height','100px');
 		});
 	};
 })
