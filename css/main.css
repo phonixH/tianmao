@@ -1492,3 +1492,14 @@ img.reviewProductImg {
 	width: 400px;
 	height: 400px;
 }
+div.reviewStasticsDiv {
+	margin-top: 20px;
+}
+div.reviewStasticsLeft {
+	width: 180px;
+	float: left;
+}
+div.reviewStasticsLeftTop {
+	background-color: #c40000;
+	height: 6px;
+}
