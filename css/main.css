@@ -1299,3 +1299,196 @@ div.warningDiv {
 	color: #000;
 }
 
+/*确认首页页面*/
+div.confirmPayPageDiv {
+	max-width: 1013px;
+	margin: 10px auto;
+}
+div.confirmPayImageDiv {
+	margin: 5px auto 80px auto;
+	width: 900px;
+	position: relative;
+}
+div.confirmPayImageDiv div {
+	color: #999;
+	position: absolute;
+	top: 100px;
+}
+div.confirmPayTime3 {
+	left: 400px;
+}
+div.confirmPayTime2 {
+	left: 190px;
+}
+div.confirmPayTime1 {
+	left: -20px;
+}
+div.confirmPayOrderInfoText {
+	margin: 10px 10px 0 10px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #000;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #ADC8E6;
+}
+div.confirmPayOrderItemDiv {
+	margin: 0 20px;
+}
+div.confirmPayOrderItemText {
+	margin: 20px 10px;
+	font-size: 14px;
+	font-weight: normal;
+	color: #000;
+}
+table.confirmPayOrderItemTable {
+	border: 1px solid #ddd;
+	width: 100%;
+}
+table.confirmPayOrderItemTable thead {
+	background-color: #E8F2FF;
+	height: 33px;
+}
+table.confirmPayOrderItemTable tr {
+	border: 1px solid #ddd;
+}
+table.confirmPayOrderItemTable th,table.confirmPayOrderItemTable td {
+	text-align: center;
+}
+td.confirmPayOrderItemProductLink {
+	text-align: left !important;
+}
+span.confirmPayProductPrice {
+	color: #666;
+	font-size: 18px;
+	font-weight: bold;
+}
+span.confrimPayOrderItemSumPrice {
+	color: #c40000;
+}
+div.confirmPayOrderDetailDiv {
+	margin: 40px;
+}
+table.confirmPayOrderDetailTable {
+	width: 100%;
+	border-top: 1px solid #ddd;
+}
+table.confirmPayOrderDetailTable td {
+	padding: 8px;
+	color: #000;
+	font-size: 14px;
+}
+span.confirmPayOrderDetailWangWangGif {
+	display: inline-block;
+	width: 67px;
+	height: 22px;
+	background: url(../img/site/wangwang.gif) no-repeat;
+	position: relative;
+	left: 2px;
+}
+div.confirmPayButtonDiv {
+	margin: 20px;
+	border: 1px solid #F58B0F;
+}
+div.confirmPayWarning {
+	margin: 20px 80px;
+	font-size: 18px;
+	color: red;
+	font-weight: bold;
+}
+button.confirmPayButton {
+	margin: 20px 80px;
+	width: 67px;
+	height: 30px;
+	border: 1px solid #E67C00;
+	background-color: #F4A21D;
+	border-radius: 4px;
+	color: #fff;
+	font-size: 12px;
+}
+button.confirmPayButton:hover {
+	background-color: #F6AE30;
+}
+/*收货成功页面*/
+div.orderFinishedDiv {
+	border: 1px solid #e5e5e5;
+	padding: 40px;
+	max-width: 1013px;
+	margin: 10px auto;
+}
+div.orderFinishedDiv span {
+	font-size: 14px;
+	color: #000;
+	font-weight: bold;
+	margin-left: 20px;
+	padding-top: 20px;
+}
+/*评价页面*/
+div.reviewDiv {
+	max-width: 1013px;
+	margin: 10px auto;
+}
+div.reviewProductinfoImg {
+	width: 464px;
+	border: 1px solid #e7e7e7;
+	text-align: center;
+	float: left;
+}
+div.reviewProductInfoRightDiv {
+	overflow: hidden;
+	border-top: 1px solid #e7e7e7;
+	padding: 30px 20px;
+}
+div.ReviewProductInfoRightText {
+	color: #000;
+	font-size: 16px;
+	font-weight: bold;
+}
+table.reviewProductInfoTable {
+	margin: 20px 10px;
+	font-size: 12px;
+}
+table.reviewProductInfoTable td {
+	padding-bottom: 5px;
+	color: #999;
+}
+span.reviewProductInfoTablePrice {
+	color: #c40000;
+	font-size: 20px;
+	font-weight: bold;
+}
+span.reviewProductInfoTableSellNumber {
+	color: #c40000;
+	font-size: 14px;
+	font-weight: bold;
+}
+div.reviewProductInfoRightBelowDiv {
+	border: 1px solid #f6f5f3;
+	background-color: #FDFBFA;
+	height: 166px;
+	padding: 16px 0 16px 18px;
+}
+span.reviewProductInfoRightBelowImg {
+	background-color: #fff;
+	border: 1px solid #e1e1e1;
+	display: inline-block;
+	width: 23px;
+	height: 42px;
+	padding: 0;
+	background: url(../img/site/reviewLight.png) no-repeat;
+}
+span.reviewProductInfoRightBelowText {
+	border: 1px solid #efefef;
+	display: inline-block;
+	width: 200px;
+	height: 42px;
+	padding: 4px;
+	position: relative;
+	left: -4px;
+	top: -7px;
+	color: #666;
+	font-size: 12px;
+}
+img.reviewProductImg {
+	width: 400px;
+	height: 400px;
+}
