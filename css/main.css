@@ -1633,3 +1633,41 @@ button.redButton {
 	font-size: 14px;
 	font-weight: bold;
 }
+/*注册页面*/
+div.registerDiv {
+	margin: 10px 20px;
+	text-align: center;
+}
+table.registerTable {
+	color: #3c3c3c;
+	font-size: 16px;
+	table-layout: fixed;
+	margin-top: 50px;
+}
+table.registerTable td {
+	padding: 10px 30px;
+}
+table.registerTable input {
+	border: 1px solid #dedede;
+	width: 213px;
+	height: 36px;
+	font-size: 14px;
+}
+table.registerTable button {
+	width: 170px;
+	height: 36px;
+	border-radius: 2px;
+	color: #fff;
+	background-color: #c40000;
+	border-width: 0;
+}
+td.registerTip {
+	font-weight: bold;
+}
+td.registerTableLeftTD {
+	width: 300px;
+	text-align: right
+}
+td.registerTableRightTD {
+	text-align: center;
+}
